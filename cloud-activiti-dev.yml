@@ -62,4 +62,4 @@ management:
       exposure:
         include: ["health","info","refresh"]
 
-test: 大神如来，杀心观音
+test: 大神如来，杀心观音,hehe
