@@ -54,3 +54,5 @@ eureka:
 feign:
   httpclient:
     connection-timeout: 10000
+
+test: 大神如来
