@@ -54,5 +54,9 @@ eureka:
 feign:
   httpclient:
     connection-timeout: 10000
+    
+management:
+  endpoints:
+    enabled-by-default: true
 
-test: 大神如来，大神如来
+test: 大神如来，杀心观音
