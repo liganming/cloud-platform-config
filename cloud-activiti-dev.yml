@@ -55,4 +55,4 @@ feign:
   httpclient:
     connection-timeout: 10000
 
-test: 大神如来
+test: 大神如来，大神如来
