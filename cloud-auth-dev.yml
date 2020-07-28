@@ -39,10 +39,12 @@ pagehelper:
   supportMethodsArguments: true
   params: count=countSql
 
-session:
-  timeout: 600000
-  algorithmName: MD5
-  hashIterations: 2
+shiro:
+  session:
+    timeout: 600000
+    algorithmName: MD5
+    hashIterations: 2
+  exclude:["/actuator/hystrix.stream","/common/permission/**","/common/user/**"]
 
 beetlsql:
   enabled: false
