@@ -56,3 +56,10 @@ feign:
   httpclient:
     connection-timeout: 10000
 
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: ["health","info","refresh"]
+
