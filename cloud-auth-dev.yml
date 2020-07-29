@@ -62,9 +62,8 @@ feign:
     enabled: true
   client:
       config:
-        default:
-          connect-timeout: 10000
-          read-timeout: 10000
+        connect-timeout: 10000
+        read-timeout: 10000
 hystrix:
   command:
     default:
