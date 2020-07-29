@@ -55,8 +55,8 @@ eureka:
       defaultZone: http://localhost:8761/eureka/ #指定服务注册中心的位置
 
 ribbon:
-  read-timeout: 10000
-  connect-timeout: 10000
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
 feign:
   hystrix:
     enabled: true
@@ -71,7 +71,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeout-in-milliseconds: 12000
+            timeoutInMilliseconds: 12000
         timeout:
           enabled: true  #如果enabled设置为false，则请求超时交给ribbon控制,为true,则超时作为熔断根据
 
