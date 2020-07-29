@@ -9,3 +9,7 @@ eureka:
 	  
 zuul:
   sensitiveHeaders:   #清空过滤列表，防止拦截cookie、set_cookie、Authorization等
+  
+ribbon:
+  read-timeout: 10000
+  connect-timeout: 10000

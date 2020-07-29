@@ -53,9 +53,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/ #指定服务注册中心的位置
-feign:
-  httpclient:
-    connection-timeout: 10000
+ribbon:
+  read-timeout: 10000
+  connect-timeout: 10000
     
 management:
   endpoints:
