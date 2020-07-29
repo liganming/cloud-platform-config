@@ -63,5 +63,5 @@ management:
     enabled-by-default: true
     web:
       exposure:
-        include: ["health","info","refresh"]
+        include: ["health","info","refresh","hystrix.stream"]
 
