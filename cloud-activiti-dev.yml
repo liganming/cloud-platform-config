@@ -53,9 +53,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/ #指定服务注册中心的位置
-	  
-	  
-	  
+
+
+
 ribbon:
   ReadTimeout: 10000
   ConnectTimeout: 10000
@@ -63,10 +63,10 @@ feign:
   hystrix:
     enabled: true
   client:
-      config:
-        default:
-          connectTimeout: 10000
-          readTimeout: 10000
+    config:
+      default:
+        connectTimeout: 10000
+        readTimeout: 10000
 hystrix:
   command:
     default:
@@ -76,7 +76,7 @@ hystrix:
             timeoutInMilliseconds: 12000
         timeout:
           enabled: true  #如果enabled设置为false，则请求超时交给ribbon控制,为true,则超时作为熔断根据
-    
+
 management:
   endpoints:
     enabled-by-default: true
